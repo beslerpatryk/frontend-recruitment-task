@@ -21,6 +21,11 @@ function closeModal(){
     modal.style.display = "none";
 }
 
+function resetNumOfClicks(){
+    clickCounter = 0;
+    numOfClicks.innerHTML = clickCounter;
+}
+
 contentBtn.addEventListener("click", () => {
     count();
     showModal();
@@ -31,47 +36,6 @@ closeBtn.addEventListener("click", () => {
 })
 
 resetBtn.addEventListener("click", () => {
-    localStorage.clear();
-    clickCounter = 0;
-    numOfClicks.innerHTML = clickCounter;
+    resetNumOfClicks()
 })
 
-// const countUp = () => {
-//   clickCounter++;
-//   countDisplay.innerHTML = clickCounter;
-//   localStorage.setItem("clickCounter", clickCounter);
-// }
-
-// const openPopUp = () => {
-//   popUpWindow.style.display = 'block';
-//   popUpCloseBtn.focus();
-// }
-
-// const closePopUp = () => {
-//   popUpWindow.style.display = 'none';
-// }
-
-// const resetCounter = () => {
-//   localStorage.clear();
-//   clickCounter = 0;
-//   countDisplay.innerHTML = clickCounter;
-//   closePopUp();
-// }
-
-// showBtn.addEventListener("click", () => {
-//   countUp();
-//   openPopUp();
-//   popUpResetBtn.style.display = (clickCounter <= 5) ? 'none' : 'block';
-// });
-
-// popUpCloseBtn.addEventListener("click", () => {
-//   closePopUp();
-// })
-
-// popUpCloseOutside.addEventListener("click", () => {
-//   closePopUp();
-// })
-
-// popUpResetBtn.addEventListener("click", () => {
-//   resetCounter();
-// })
