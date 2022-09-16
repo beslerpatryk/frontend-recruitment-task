@@ -7,6 +7,7 @@
 }
 
 /* Custom Properties */
+/* @todo primary color contrast ratio is too low with white */
 
 :root {
     --primary: #e4c1ae;
@@ -34,7 +35,6 @@ body {
 main {
     max-width: 1440px;
     padding: 2rem;
-    padding-top: 6rem;
 }
 
 /* Hero Section */
@@ -44,7 +44,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 2rem;
 }
 
@@ -52,10 +51,10 @@ main {
     max-width: 505px;
 }
 
-
 .img-hero img {
     max-width: 100%;
     overflow: hidden;
+    height: auto;
 }
 
 /* Buttons */
@@ -105,7 +104,7 @@ main {
     display: block;
 }
 
-/* Typography */
+/* Content */
 
 h1,
 h2 {
@@ -126,6 +125,8 @@ h2 {
     max-width: 1400px;
     margin: 0 auto;
 }
+
+/* Modal */
 
 .modal {
     display: none;
@@ -174,8 +175,6 @@ h2 {
     .hero {
         flex-direction: row;
     }
-
-
 }
 
 @media(min-width:1230px) {
