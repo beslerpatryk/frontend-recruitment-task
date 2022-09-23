@@ -7,15 +7,13 @@
 }
 
 /* Custom Properties */
-/* @todo primary color contrast ratio is too low with white */
 
 :root {
     --primary: #e4c1ae;
-    --hover: #f3cebb;
+    --hover: #dbb5a0;
     --accent: #1c7947;
     --light: #ffffff;
     --dark: #121212;
-    --black: #000000;
 }
 
 /* General Styling */
