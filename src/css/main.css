@@ -7,6 +7,7 @@
 }
 
 /* Custom Properties */
+/* @todo primary color and white contrast is too low */
 
 :root {
     --primary: #e4c1ae;
